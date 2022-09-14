@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Share&display=swap");
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #999;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7c7c7c+0,000000+100 */
+  background: #7c7c7c; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #7c7c7c 0%,
+    #000000 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.calc {
+  background-color: #382c2c;
+  color: rgb(161, 243, 78);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #703232, 0px 6px 7px rgb(0, 0, 0, 0.6);
+}
+.result {
+  background-color: #cecfac;
+  color: #3b3b32;
+  height: 50px;
+  line-height: 50px;
+  font-size: 35px;
+  text-align: right;
+  overflow: hidden;
+  padding-right: 10px;
+  width: 90%;
+  margin: 8px 0px 20px 10px;
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.5), inset 0px 2px 0px #a1a1a1;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  background-color: #4e4e4e;
+  color: #fff;
+  float: left;
+  list-style-type: none;
+  width: 15%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #a5a5a5, 0px 2px 5px rgb(0, 0, 0, 0.75);
+  font-family: "Share", cursive;
+}
+ul li:nth-child(16) {
+  height: 75px;
+  line-height: 75px;
+}
+ul li:last-child {
+  width: 65%;
+  margin-top: -48px;
+}
+ul li:active {
+  position: relative;
+  top: 4px;
+  box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.4);
+}
+.signature {
+  color: white;
+  font-size: 0.75rem;
+  position: relative;
+  top: 9px;
+  left: 85px;
+  z-index: -1;
+  font-family: "Share", cursive;
+}

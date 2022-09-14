@@ -1,0 +1,98 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+html {
+  background-image: url("background.jpg");
+  background-size: cover;
+  font-size: 30px;
+  background-position: center center;
+}
+.button {
+  text-align: center;
+  padding: 4px 25px;
+  font-size: 22px;
+  line-height: 44px;
+  background-color: #f08080;
+  color: #fff;
+  border: 1px solid #b0e0e6;
+  outline: 0 !important;
+  border-radius: 4px;
+  box-shadow: 0px 4px 0px #ffa07a, 0px 0px 5px 1px rgb(0, 0, 0, 4);
+  margin-top: -4px;
+  transition: all 0.15s ease-in-out;
+}
+.button:hover {
+  background-color: #8b0000;
+  box-shadow: 0px 4px 0px #e9967a, 0px 5px 5px 1px rgb(0, 0, 0, 4);
+}
+.button:active {
+  margin-top: 0;
+  box-shadow: none;
+}
+.button--close {
+  background-color: #f5f5ff;
+  color: #808080;
+  box-shadow: 0px 4px 0px #808080, 0px 0px 5px 1px rgb(0, 0, 0, 4);
+}
+.button--close:hover {
+  background-color: #fff;
+  box-shadow: 0px 4px 0px #585252, 0px 0px 5px 1px rgb(0, 0, 0, 4);
+}
+.button--accept {
+  background-color: #0202ff;
+  box-shadow: 0px 4px 0px #02022c, 0px 0px 5px 1px rgb(0, 0, 0, 4);
+}
+.button--accept:hover {
+  background-color: #343463;
+  box-shadow: 0px 4px 0px #0e0e20, 0px 0px 5px 1px rgb(0, 0, 0, 4);
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#modal-background {
+  background-color: rgb(0, 0, 0, 0.43);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out, z-index 0.25 ease-in-out;
+}
+#modal-background.active {
+  opacity: 1;
+  z-index: 10;
+}
+#modal-box {
+  position: fixed;
+  background-color: #fff;
+  padding: 25px;
+  max-width: 700px;
+  min-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out, z-index 0.25 ease-in-out;
+}
+
+#modal-box.active {
+  opacity: 1;
+  z-index: 11;
+}
+h1,
+p {
+  font-family: "india flower", cursive;
+}
+.text-right {
+  text-align: right;
+}
